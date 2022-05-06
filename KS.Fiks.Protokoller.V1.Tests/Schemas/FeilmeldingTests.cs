@@ -5,7 +5,6 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
 using Xunit;
-using Assert = NUnit.Framework.Assert;
 
 namespace KS.Fiks.Protokoller.V1.Tests.Schemas
 {
