@@ -19,7 +19,7 @@ namespace KS.Fiks.Protokoller.V1.Tests.Schemas
                 ErrorId = "testErrorId",
                 Feilmelding = "testFeilmelding"
             };
-            Assert.True(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingMeldingTypeV1.Serverfeil}.schema.json"));
+            Assert.True(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingType.Serverfeil}.schema.json"));
         }
 
         [Fact]
@@ -31,7 +31,7 @@ namespace KS.Fiks.Protokoller.V1.Tests.Schemas
                 errorId = -2,
                 feilmelding = "testFeilmelding"
             };
-            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingMeldingTypeV1.Serverfeil}.schema.json"));
+            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingType.Serverfeil}.schema.json"));
         }
 
         [Fact]
@@ -42,7 +42,7 @@ namespace KS.Fiks.Protokoller.V1.Tests.Schemas
                 correlationId = "testCorrelationId",
                 feilmelding = "testFeilmelding"
             };
-            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingMeldingTypeV1.Serverfeil}.schema.json"));
+            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingType.Serverfeil}.schema.json"));
         }
 
         [Fact]
@@ -54,7 +54,7 @@ namespace KS.Fiks.Protokoller.V1.Tests.Schemas
                 ErrorId = "testErrorId",
                 Feilmelding = "testFeilmelding"
             };
-            Assert.True(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingMeldingTypeV1.Ugyldigforespørsel}.schema.json"));
+            Assert.True(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingType.Ugyldigforespørsel}.schema.json"));
         }
 
         [Fact]
@@ -66,7 +66,7 @@ namespace KS.Fiks.Protokoller.V1.Tests.Schemas
                 errorId = -2,
                 feilmelding = "testFeilmelding"
             };
-            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingMeldingTypeV1.Ugyldigforespørsel}.schema.json"));
+            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingType.Ugyldigforespørsel}.schema.json"));
         }
 
         [Fact]
@@ -77,7 +77,7 @@ namespace KS.Fiks.Protokoller.V1.Tests.Schemas
                 correlationId = "testCorrelationId",
                 feilmelding = "testFeilmelding"
             };
-            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingMeldingTypeV1.Ugyldigforespørsel}.schema.json"));
+            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingType.Ugyldigforespørsel}.schema.json"));
         }
 
         [Fact]
@@ -89,7 +89,7 @@ namespace KS.Fiks.Protokoller.V1.Tests.Schemas
                 ErrorId = "testErrorId",
                 Feilmelding = "testFeilmelding"
             };
-            Assert.True(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingMeldingTypeV1.Ikkefunnet}.schema.json"));
+            Assert.True(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingType.Ikkefunnet}.schema.json"));
         }
 
         [Fact]
@@ -101,7 +101,7 @@ namespace KS.Fiks.Protokoller.V1.Tests.Schemas
                 errorId = -2,
                 feilmelding = "testFeilmelding"
             };
-            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingMeldingTypeV1.Ikkefunnet}.schema.json"));
+            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingType.Ikkefunnet}.schema.json"));
         }
 
         [Fact]
@@ -112,7 +112,7 @@ namespace KS.Fiks.Protokoller.V1.Tests.Schemas
                 correlationId = "testCorrelationId",
                 feilmelding = "testFeilmelding"
             };
-            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingMeldingTypeV1.Ikkefunnet}.schema.json"));
+            Assert.False(JsonValidates(JsonConvert.SerializeObject(serverFeil), $@"./../../../../KS.Fiks.Protokoller.V1/Schema/{FeilmeldingType.Ikkefunnet}.schema.json"));
         }
 
         private static bool JsonValidates(string jsonString, string pathToSchema)
